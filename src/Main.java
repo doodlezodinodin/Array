@@ -8,8 +8,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Array array = new Array();
-
-        System.out.println(Arrays.toString(array.bubbleSoft()));
-
+        array.bubbleSoft();
+        array.output();
     }
 }

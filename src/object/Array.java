@@ -1,12 +1,15 @@
 package object;
 
+import java.util.Arrays;
+
 /**
  * Created by alex on 29.03.2017.
  */
 public class Array {
-    public int[] bubbleSoft(){
-        int[] arr = {4, 5, 7, 2, 3, 0, 8, 9, 1, 6};
 
+    private int[] arr = {4, 5, 7, 2, 3, 0, 8, 9, 1, 6};
+
+    public int[] bubbleSoft(){
         //body
         for(int i=arr.length-1; i>=0; i--){
             for(int j=0; j<i; j++){
@@ -18,5 +21,9 @@ public class Array {
             }
         }
         return arr;
+    }
+
+    public void output() {
+        System.out.println(Arrays.toString(arr));
     }
 }
